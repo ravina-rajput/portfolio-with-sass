@@ -1,0 +1,123 @@
+/* base color- #fc0356 or
+base color-#e40941
+
+primary color #c9225a
+secondary color #f55188
+tertiary color #f26b81 or #f75973
+
+
+font-family: 'Ubuntu', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
+.header {
+  position: relative;
+  height: 100vh;
+  /* background-image: linear-gradient(to right bottom, #ee69ff, #955af9); */
+  /* background-image: linear-gradient(to right bottom, #69c4ff, #5af9d4); */
+  /* background-image: linear-gradient(to right bottom, #fee140, #fa709a); */
+  /* background-image: linear-gradient(to right bottom, #ff69cd, #f95a6d); */
+  /* background-image: linear-gradient(to right bottom, #69edff, #ad7efd); */
+  background-image: linear-gradient(to right bottom, #a6fd8c, #63c650);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 75px;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.primary-heading {
+  color: black;
+  text-transform: uppercase;
+}
+.primary-heading-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 20px;
+}
+.primary-heading-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  margin-bottom: 60px;
+}
+.btn {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 40px;
+  text-decoration: none;
+  border: 2px solid black;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before {
+  background: black;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn-white::before {
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-white:hover::before {
+  height: 400%;
+}
+/* .btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 100px;
+}
+.btn-white {
+  background-color: white;
+  color: black; */
+/* }
+.button {
+  font-size: 20px;
+  color: red;
+  background-color: blue !important;
+}
+
+#nav,
+.right,
+.button {
+  background-color: green;
+} */
